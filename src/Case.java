@@ -17,6 +17,9 @@ public class Case {
         this.data = data;
     }
 
+    public String toString(){
+        return "ligne : "+this.ligne+" colonne: "+this.column+" data: "+this.data+"";
+    }
     public int getLigne() {
         return ligne;
     }

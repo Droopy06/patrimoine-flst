@@ -42,7 +42,7 @@ public class Main {
                         System.out.println("Entrez un numéro de ligne.");
                         int ligne = Integer.parseInt(sc.nextLine());
                         long debut = System.currentTimeMillis();
-                        System.out.println(rechercherLigne(ligne,maTable));
+                        System.out.println(rechercherLigne(ligne,maTable).toString());
                         System.out.println(System.currentTimeMillis()-debut+" ms");
                     }catch (Exception ex){
                         ex.getMessage();
@@ -55,7 +55,7 @@ public class Main {
                         System.out.println("Entrez un nom de colonne.");
                         String column = sc.nextLine();
                         long debut = System.currentTimeMillis();
-                        System.out.println(rechercheCase(ligne, column, maTable));
+                        System.out.println(rechercheCase(ligne, column, maTable).toString());
                         System.out.println(System.currentTimeMillis()-debut+" ms");
                     }catch (Exception ex){
                         ex.getMessage();
