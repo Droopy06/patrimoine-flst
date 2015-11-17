@@ -83,7 +83,7 @@ public class Main {
         Case maCase = new Case();
         List<Case> tableTableau = table.getmListCase();
         for(Case caseCourante : tableTableau){
-            if(caseCourante.getLigne() == idLigneCherche && caseCourante.getColumn() == columnCherche)
+            if(caseCourante.getLigne() == idLigneCherche && Objects.equals(caseCourante.getColumn(), columnCherche))
                 maCase = caseCourante;
         }
         return maCase;
